@@ -23,7 +23,7 @@ To set up the development environment for MuPDF-Viewer, follow these steps:
 
 2. **Clone the Repository**: Clone this repository to your local machine using Git.
     ```sh
-    git clone https://github.com/your-username/mupdf-viewer.git
+    git clone https://github.com/tuxxon/mupdf-viewer.kotlin.git
     ```
 
 3. **Open the Project**: Launch Android Studio and open the cloned project directory.
