@@ -1,4 +1,4 @@
-# MuPDF-Viewer
+# MuPDF-Viewer.kotlin
 
 MuPDF-Viewer is an Android application written in Kotlin that allows users to view PDF files using the MuPDF library.
 
