@@ -1,0 +1,3 @@
+[submodule "jni/libmupdf"]
+	path = jni/libmupdf
+	url = https://github.com/ArtifexSoftware/mupdf-android-fitz.git
