@@ -82,3 +82,7 @@ We welcome contributions to the MuPDF-Viewer project. To contribute, please foll
 ## License
 
 MuPDF-Viewer is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## References
+
+This project is inspired by and utilizes the MuPDF library. For more information, visit the [MuPDF Android Viewer repository](https://github.com/ArtifexSoftware/mupdf-android-viewer).
