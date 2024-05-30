@@ -10,6 +10,7 @@ import android.view.*
 import android.widget.AdapterView
 import android.widget.Scroller
 import com.artifex.mupdf.fitz.Link
+import com.example.mupdfviewer.R
 import java.util.*
 
 open class ReaderView @JvmOverloads constructor(

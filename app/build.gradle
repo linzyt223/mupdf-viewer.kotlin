@@ -49,7 +49,10 @@ android {
 
 dependencies {
 
-    api libs.viewer
+    if (file('../jni/build.gradle').isFile())
+        api project(':jni')
+    else
+        api 'com.artifex.mupdf:fitz:1.24.0'
 
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle.runtime.ktx
@@ -61,6 +64,7 @@ dependencies {
     implementation libs.androidx.material3
     implementation libs.kotlinx.coroutines.android
     implementation libs.coil.compose
+    implementation libs.androidx.appcompat
 
     testImplementation libs.junit
     androidTestImplementation libs.androidx.junit

@@ -9,7 +9,8 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
-        maven { url 'https://maven.ghostscript.com/' }
+        //maven { url 'https://maven.ghostscript.com/' }
+        maven { url "file://${System.properties['user.home']}/MAVEN" }
     }
 }
 dependencyResolutionManagement {
@@ -17,9 +18,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://maven.ghostscript.com/' }
+        //maven { url 'https://maven.ghostscript.com/' }
+        maven { url "file://${System.properties['user.home']}/MAVEN" }
     }
 }
 
 rootProject.name = "MuPDFViewer"
 include ':app'
+include ':jni'

@@ -33,6 +33,7 @@ import android.widget.Toast
 import com.artifex.mupdf.fitz.Cookie
 import com.artifex.mupdf.fitz.Link
 import com.artifex.mupdf.fitz.Quad
+import com.example.mupdfviewer.R
 import kotlinx.coroutines.*
 import java.util.*
 

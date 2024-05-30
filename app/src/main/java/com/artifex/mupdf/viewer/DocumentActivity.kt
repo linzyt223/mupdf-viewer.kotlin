@@ -1,5 +1,6 @@
 package com.artifex.mupdf.viewer
 
+import SearchTask
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.Context
@@ -31,6 +32,7 @@ import android.widget.SeekBar
 import android.widget.TextView
 import android.widget.ViewAnimator
 import com.artifex.mupdf.fitz.SeekableInputStream
+import com.example.mupdfviewer.R
 import java.io.IOException
 import java.util.Locale
 
@@ -321,11 +323,13 @@ class DocumentActivity : Activity() {
         }
         mDocView.adapter = PageAdapter(this, core!!)
 
-        mSearchTask = object : SearchTask(this, core!!) {
-            override fun onTextFound(result: SearchTaskResult) {
+        mSearchTask = object : SearchTask(this@DocumentActivity, core!!) {
+            override fun onTextFound(result: SearchTaskResult?) {
                 SearchTaskResult.set(result)
                 // Ask the ReaderView to move to the resulting page
-                mDocView.setDisplayedViewIndex(result.pageNumber)
+                if (result != null) {
+                    mDocView.setDisplayedViewIndex(result.pageNumber)
+                }
                 // Make the ReaderView act on the change to SearchTaskResult
                 // via overridden onChildSetup method.
                 mDocView.resetupChildren()
