@@ -1,7 +1,6 @@
 name: Android CI
 
-on:
-  deployment
+on: push
 
 jobs:
   build:
